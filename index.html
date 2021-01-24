@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <title>Skate</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Noto+Sans+JP:wght@300;400;500&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="overlay-login" id="overlay-login">
+        <div class="modal modal-login">
+            <div class="cont-exit">
+                <span class="btn-login-exit" id="btn-close" onclick="hideLogin();">x</span>
+            </div>
+            <h2>Login Form</h2>
+            <form action="" class="formulario">
+                <input type="text" name="usuario" id="usuario" placeholder="Enter your username">
+                <label for="usuario">Username</label>
+                <input type="password" name="pass" id="pass" placeholder="Enter your password">
+                <label for="pass">Password</label>
+                <button type="submit" value="login" name="btnAccion">
+                    Login
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="overlay-form" id="overlay-form">
+        <div class="modal modal-login">
+            <div class="cont-exit">
+                <span class="btn-login-exit" id="btn-close" onclick="hide();">x</span>
+            </div>
+            <h2>Register Form</h2>
+            <form action="" class="formulario">
+                <input type="text" name="email" id="email" placeholder="Enter your email">
+                <label for="usuario">Email</label>
+
+                <input type="text" name="usuario" id="usuario" placeholder="Enter your username">
+                <label for="usuario">Username</label>
+                <input type="password" name="pass" id="pass" placeholder="Enter your password">
+                <label for="pass">Password</label>
+                <input type="password" name="pass2" id="pass2" placeholder="Confirm your password">
+                <label for="pass">Confirm Password</label>
+                <button type="submit" value="login" name="btnAccion">
+                    Register
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="landing-page">
+        <div class="background-image">
+            <img src="img/portada.jpeg" alt="">
+        </div>
+        <div class="header">
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <ul>
+                <li><a class="actual" href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#" onclick="visibleLogin();">Login</a></li>
+            </ul>
+        </div>
+        <div class="call-to-action">
+            <h1 class="title">Don't look back.</h1>
+            <p class="subtitle">The future is waiting for you.</p>
+            <a class="call-to-button" href="#" onclick="visible();">Start Now</a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <img src="img/section1.jpg" alt="">
+            <div class="contenido">
+                <div class="texto">
+                    <h1>Learn new things.</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit quibusdam, cupiditate iusto nisi quo ipsam expedita molestiae maiores quas beatae, voluptate assumenda libero iste, aperiam optio quis similique magnam totam.</p>
+                </div>
+                <div class="boton">
+                    <a href="#">Start Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="container-back">
+            <div class="contenido">
+                <h1>Pick your plan</h1>
+                <div class="paquete pq1">
+                    <h2>Beginner</h2>
+                    <p>If you are at the beginning of this journey, this is the perfect plan for you.</p>
+                </div>
+                <div class="paquete pq2">
+                    <h2>Intermediate</h2>
+                    <p>If you have a sense of your equipment and feel comfortable and confident while skating/riding, this plan is for you.</p>
+                </div>
+                <div class="paquete pq3">
+                    <h2>Advanced</h2>
+                    <p>If you are very comfortable and confident skating/riding and if you know how to properly maintain your equipment, this plan is for you. </p>
+                </div>
+            </div>
+            <img src="img/section2.jpg" alt="">
+        </div>
+        <div class="container-buy">
+            <h1>Choose your weapon</h1>
+            <img src="img/section4.jpg" alt="">
+            <a href="#">Buy Now</a>
+        </div>
+    </div>
+    <script>
+        function visible(){
+            document.getElementById("overlay-form").classList.add("visible");   
+        }
+        function hide(){
+            document.getElementById("overlay-form").classList.remove("visible");   
+        }
+        function visibleLogin(){
+            document.getElementById("overlay-login").classList.add("visible"); 
+        }
+        function hideLogin(){
+            document.getElementById("overlay-login").classList.remove("visible");   
+        }
+    </script>
+</body>
+</html>
